@@ -3,6 +3,6 @@ package com.bej.product.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "Customer Not Found")
-public class CustomerNotFoundException extends Exception{
+@ResponseStatus(value = HttpStatus.CONFLICT,reason = "Customer Already Exist")
+public class CustomerAlreadyExistException extends Exception{
 }
